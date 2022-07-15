@@ -1,0 +1,399 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+:root{
+    --nav: #ebad00;
+    --home: #ffc400;
+    --btn: #00bfc9;
+    --footer: #313131;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 400ms ease;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+
+.img-responsive {
+    max-width:100%;
+    width: 100%;
+}
+
+/* INICIO BARRA */
+.nav_bar{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100px;
+    background-color: var(--nav);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: .5rem 3rem;
+    z-index: 1000;
+}
+
+.bar_items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bar_items li{
+    list-style: none;
+}
+
+.bar_items li a{
+   text-decoration: none;
+   margin-right: 2rem;
+   font-size: 20px;
+   font-weight: bold;
+   color: white;
+}
+
+.bar_search{
+    max-width: 200px;
+    width: 100%;
+}
+
+.bar_search .search{
+    position: relative;
+    height: 50px;
+    max-width: 180px;
+    margin: auto;
+    box-shadow: 9px 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+.search input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: #fff;
+    outline: none;
+    border: none;
+    padding-left: 5px;
+    font-size: 18px;
+}
+
+.search .icon{
+    position: absolute;
+    right: -2px;
+    top: 0;
+    width: 50px;
+    background: var(--btn);
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* FIN BARRA */
+
+
+/* INICIO HOME */
+
+
+.home1,
+.home2,
+.section-about2{
+   width: 100%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   padding-top: 100px;
+   min-height: 90vh;
+}
+
+.home1{
+    background-color: var(--home);
+    color: white;
+}
+
+.container_info{
+   max-width: 500px;
+   margin: 10rem;
+}
+.title{
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 4.5rem;
+    margin-bottom: 10px;
+}
+.info{
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.contact, 
+.service,
+.btn2,
+.buy{
+    padding: 15px 20px;
+    font-size: 20px;
+    border-radius: 5px;
+    margin: 5px;
+    color: white;
+    cursor: pointer;
+}
+
+.contact{
+    background-color: var(--btn);
+    border: none;
+}
+.service{
+    background-color: transparent;
+    border: 2px solid white;
+}
+.btn2{
+    background-color: var(--home);
+    border: none;
+}
+
+.play{
+    position: relative;
+    top: -220px;
+    right: 50%;
+    cursor: pointer;
+}
+
+/* FIN HOME */
+
+/* SECTION PAGE */
+.section-page{
+    padding: 4rem 0;
+    overflow: hidden;
+}
+
+/* INICIO ABOUT */
+.section-about,
+.section-services,
+.section-services2,
+.posts{
+    width: 100%;
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+   justify-content: center;
+   flex-wrap: wrap;
+   flex-direction: column;
+   background-color: var(--home);
+   color: white;
+}
+.about_top,
+.services_top,
+.posts_top{
+    text-align: center;
+}
+.about_bottom,
+.services_bottom,
+.stadistics_container,
+.posts_bottom{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.card{
+    max-width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px;
+    margin: 25px;
+}
+
+.card_title{
+    font-size: 27px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+.card_info{
+    font-size: 18px;
+    text-align: center;
+}
+
+/* FIN ABOUT */
+
+
+/* INICIO SERVICES */
+.price{
+    position: relative;
+    padding: 15px 10px;
+}
+.price::after{
+  content: '';
+  position: absolute;
+  bottom: 34px;
+  left: 5px;
+  width: 55%;
+  height: 3px;
+  background-color: white;
+  
+}
+
+.buy{
+    background-color: var(--btn);
+    color: white;
+    border: none;
+}
+
+.section-services2{
+    background-color: white;
+    color: black;
+}
+.card_info_about{
+    text-transform: uppercase;
+}
+.socials{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 7px 10px;
+}
+.socials img{
+    background: var(--home);
+    border-radius: 50%;
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+.socials img:hover{
+    transform:translateY(-10%);
+}
+.stadistics{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 30vh;
+    background-image: linear-gradient(rgba(255, 196, 0, 0.7) , rgba(255, 196, 0, 0.7)) , url(../images/vet_image.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.card_stadistics img{
+    margin-bottom:  12px;
+    height: 4rem;
+}
+.posts{
+    color: black;
+    background-color: white;
+}
+.card_post{
+    max-width: 350px;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+    overflow: hidden;
+    margin: 20px 30px;
+    box-shadow: 3px 10px 12px rgba(0, 0, 0, 0.25);
+}
+
+.post_info{
+   padding: 20px;
+}
+.card_date,
+.more_info{
+   color: var(--btn);
+   font-weight: bold;
+}
+
+.card_date{
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.more_info{
+    font-size: 20px;
+    margin-top: 5px;
+}
+/* FIN SERVICES */
+
+
+/* INICIO FOOTER */
+
+.footer{
+    width: 100%;
+    min-height: 30vh;
+    background-color: var(--footer);
+    color: white;
+    padding: 5rem 0;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    flex-wrap: wrap;     
+}
+
+.footer_info
+{
+    display: flex;
+    flex-direction: column;
+    margin: 25px  9rem 25px 0;
+}
+
+.footer_title{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.footer_info a{
+    text-decoration: none;
+    color: white;
+    font-size: 15px;
+    margin-bottom: 3px;
+}
+
+.footer_right{
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start ;
+}
+.footer_email{
+    margin-bottom: 20px;
+}
+.box_email
+{
+    display: flex;
+    align-items: center;
+     position: relative;
+}
+.box_email input{
+    height: 37px;
+    background-color: var(--home);
+    border: none;
+}
+.box_email .submit{
+    background-color:#00bfc9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    padding: 2px 5px;
+    border: none;
+    cursor: pointer;
+}
+.icons{
+    cursor: pointer;
+}
+.icons img{
+    margin-right: 10px;
+    width: 30px;
+}
+
+
+
+/* FIN FOOTER */
